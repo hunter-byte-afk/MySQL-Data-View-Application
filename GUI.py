@@ -12,6 +12,7 @@ from webbrowser import get
 from enum import Enum
 from matplotlib import style, table
 from numpy import insert, pad
+from scipy.__config__ import show
 from settings import *
 import mysql.connector
 import sys
@@ -89,13 +90,11 @@ def submit_options(master, host, user, password, database):
         # Reinitialize table buttons
         set_up_table_buttons()
 
-        master.destroy()
     except mysql.connector.Error as err:
         print(f"Failed to connect to database: {err}")
         error_popup = Toplevel(master)
         Label(error_popup, text=f"Connection failed: {err}", fg="red", font=font_label).pack(pady=20)
 
-    master.destroy()
 
 def READMe_Popup():
     readme = Toplevel(root)
@@ -403,6 +402,37 @@ def run_query(table_name, query_type_val):
     elif query_type == View_Type.DELETE:
         delete_record(table_name)
 
+def show_connection_prompt():
+    options = Frame(root, bg=bg_color)
+    options.pack(padx=padding_x, pady=padding_y)
+
+    Label(options, text="Host:", font=font_label).grid(row=0, column=0, sticky="e", padx=10, pady=5)
+    Label(options, text="User:", font=font_label).grid(row=1, column=0, sticky="e", padx=10, pady=5)
+    Label(options, text="Password:", font=font_label).grid(row=2, column=0, sticky="e", padx=10, pady=5)
+    Label(options, text="Database:", font=font_label).grid(row=3, column=0, sticky="e", padx=10, pady=5)
+
+    _host = Entry(options)
+    _user = Entry(options)
+    _password = Entry(options, show="*")
+    _database = Entry(options)
+
+    _host.grid(row=0, column=1, pady=5)
+    _user.grid(row=1, column=1, pady=5)
+    _password.grid(row=2, column=1, pady=5)
+    _database.grid(row=3, column=1, pady=5)
+
+    _host.insert(0, "localhost")
+    _user.insert(0, "root")
+    _password.insert(0, "")
+    _database.insert(0, "las_palmas_medical_center")
+
+    Button(
+        options, text='Submit', font=font_button,
+        command=lambda: submit_options(root, _host, _user, _password, _database)
+    ).grid(row=4, columnspan=2, pady=20)
+
+    
+
 def main():
     global db_connection
     global db_cursor
@@ -467,7 +497,8 @@ def main():
 
     ## buttons
 
-    set_up_table_buttons()
+
+    show_connection_prompt()
 
     # Execute Tkinter
     root.mainloop()
