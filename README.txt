@@ -1,23 +1,22 @@
+*DISCLAIMER!* Anyone is available to use this application but it should only be used for personal projects where security is not a requirement. 
+
 # Project: Phase 3
 
 ## Description
-Hello! Thank you for taking the time to check out my simple Python application. It allows you to find averages, insert and delete records, and view database tables. I designed it so you can use any MySQL database, not just a specific one.
+Hello! Thank you for taking the time to check out my simple Python application. It allows you to find averages, insert and delete records, and view database tables. I designed it so you can use any MySQL database, not just a specific one. This project is currently being re-worked where you can check out the recent changes in `beta`. 
 
 ## Set-Up:
 
 ### Prerequisites
 - Any MySQL Database already set up
 -  Python 3.12 or above (especially if you're not on Windows)
+- Pip (Python package installer) to install `mysql.connector`
 
 ### Steps
-1. After unzipping the folder, you should see two directories:
-	Source Code — contains all the source code
-	Application — contains the executable file 
+1. After unzipping the folder, make sure your current working directory in the terminal contains `GUI.py`.
 
-2a. To run the executable: Simply double-click the executable file inside the Application folder.
-
-2b. To run the source code yourself: Open a terminal, naviagate to the Source Code Older and run:
-	python proj3.py
+2. To run the source code yourself: Open a terminal, navigate to the Source Code Older and run:
+	python GUI.py
 ## Usage
 
 ### Options
