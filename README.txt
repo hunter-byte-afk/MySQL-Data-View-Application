@@ -1,23 +1,21 @@
-# Project: Phase 3
+# Project: MySQL Database Viewer
 
 ## Description
-Hello! Thank you for taking the time to check out my simple Python application. It allows you to find averages, insert and delete records, and view database tables. I designed it so you can use any MySQL database, not just a specific one.
+Hello! Thank you for taking the time to check out my simple Python application. It allows you to find averages, insert and delete records, and view database tables. I designed it so you can use any MySQL database, not just a specific one. This current branch is still in beta and will need some time before we create the finish project.
 
 ## Set-Up:
 
 ### Prerequisites
 - Any MySQL Database already set up
 -  Python 3.12 or above (especially if you're not on Windows)
+- Pip (Python package installer) to install `mysql.connector`
+
 
 ### Steps
-1. After unzipping the folder, you should see two directories:
-	Source Code — contains all the source code
-	Application — contains the executable file 
+1. After unzipping the folder, make sure your current working directory in the terminal contains `proj.py`.
 
-2a. To run the executable: Simply double-click the executable file inside the Application folder.
-
-2b. To run the source code yourself: Open a terminal, naviagate to the Source Code Older and run:
-	python proj3.py
+2. To run the source code yourself: Open a terminal, navigate to the Source Code Older and run:
+	python GUI.py
 ## Usage
 
 ### Options
@@ -41,6 +39,5 @@ Choose this query and select the table from which you'd like to delete a record.
 ## Acknowledgements
 This project was written for a class at New Mexico State University (C S 482) taught by Dr. Nagarkar. The database used was created for Project: Phase 1, and this project is an expansion of that work.
 
-## P.S
-CHOOSE KINDNESS: this disgusting smell of this code is the rotting code spaghetti of writing at 2am. I don't normally write code in python and I REFUSE to go back to JavaFX (I hate JavaFX with a passion). 
+
 
