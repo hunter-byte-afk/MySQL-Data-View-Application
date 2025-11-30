@@ -1,9 +1,9 @@
 *DISCLAIMER!* Anyone is available to use this application but it should only be used for personal projects where security is not a requirement. 
 
-# Project: Phase 3
+# MySQL Data View Application
 
 ## Description
-Hello! Thank you for taking the time to check out my simple Python application. It allows you to find averages, insert and delete records, and view database tables. I designed it so you can use any MySQL database, not just a specific one. This project is currently being re-worked where you can check out the recent changes in `beta`. 
+Hello! Thank you for taking the time to check out my simple Python application. It allows you to find averages, insert and delete records, and view database tables. I designed it so you can use any MySQL database, not just a specific one. This project is currently being re-worked, where you can check out any of the recent changes in `beta`. 
 
 ## Set-Up:
 
