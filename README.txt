@@ -40,6 +40,3 @@ Choose this query and select the table from which you'd like to delete a record.
 ## Acknowledgements
 This project was written for a class at New Mexico State University (C S 482) taught by Dr. Nagarkar. The database used was created for Project: Phase 1, and this project is an expansion of that work.
 
-## P.S
-CHOOSE KINDNESS: this disgusting smell of this code is the rotting code spaghetti of writing at 2am. I don't normally write code in python and I REFUSE to go back to JavaFX (I hate JavaFX with a passion). 
-
